@@ -1,0 +1,23 @@
+@import './responsive.scss';
+
+.layout {
+    height: 100vh;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include large_screen {
+        background-color: rgb(109, 196, 225);
+        max-width: 1280px;
+    }
+    @include medium_screen {
+        background-color: lightseagreen;
+        max-width: 768px;
+    }
+    @include small_screen {
+        background-color: lightcoral;
+        max-width: 640px;
+    }
+}
