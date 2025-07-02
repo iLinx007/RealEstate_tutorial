@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="left">
-        <a href="/">
+        <a href="/" className="logo">
           <img src="/hive.png" alt="Logo"></img>
           <span>Hive</span>
         </a>
@@ -14,8 +14,8 @@ function Navbar() {
         <a href="/agents">Agents</a>
       </div>
       <div className="right">
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
+        <a href="/login" className="login">Login</a>
+        <a href="/register" className="register">Register</a>
       </div>
     </nav>
   );
