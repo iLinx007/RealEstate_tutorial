@@ -7,6 +7,8 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
 
     @include large_screen {
         background-color: rgb(109, 196, 225);
@@ -19,5 +21,10 @@
     @include small_screen {
         background-color: lightcoral;
         max-width: 640px;
+    }
+
+    .content{
+        background-color: red;
+        flex: 1;
     }
 }
